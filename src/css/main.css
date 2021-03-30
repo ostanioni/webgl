@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     overflow: hidden;
 }
-#cnvs {
+#Cnvs {
     border: 1px solid blue;
     width: 300;
     height: 300;

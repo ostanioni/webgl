@@ -14,8 +14,8 @@ const positionBuffer = gl.createBuffer(); // Атрибуты получают �
 
 gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
-// gl.clearColor(0, 0, 0, 0);// очищаем canvas
-// gl.clear(gl.COLOR_BUFFER_BIT);
+gl.clearColor(0, 0, 0, 0);// очищаем canvas
+gl.clear(gl.COLOR_BUFFER_BIT);
 
 gl.useProgram(program); // Указываем WebGL, какую шейдерную программу нужно выполнить
 
