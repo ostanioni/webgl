@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#cnvs {
+    border: 1px solid blue;
+    width: 300;
+    height: 300;
+    background-color: burlywood;
+}

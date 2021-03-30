@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-ru">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>WebGL</title>
+    <meta name="description" content="">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no">
+    <link rel="stylesheet" href="src/css/main.css">
+ </head>
+ <body>
+  <canvas id="Cnvs"></canvas>
+  <script id="vertex-shader-2d" type="notjs">
+    attribute vec4 a_position;
+    void main() {
+      // gl_Position - специальная переменная вершинного шейдера,
+      // которая отвечает за установку положения
+      gl_Position = a_position;
+    }   
+  </script>
+  
+  <script id="fragment-shader-2d" type="notjs">
+    // фрагментные шейдеры не имеют точности по умолчанию, поэтому нам необходимо её
+    // указать. mediump подойдёт для большинства случаев. Он означает "средняя точность"
+    precision mediump float;
+   
+    void main() {
+      // gl_FragColor - специальная переменная фрагментного шейдера.
+      // Она отвечает за установку цвета.
+      gl_FragColor = vec4(1, 0, 0.5, 1); // вернёт красновато-фиолетовый
+    }
+  </script>
+
+  <script src="src/js/main.js"></script>
+ </body>
+</html>
